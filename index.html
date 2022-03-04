@@ -12,34 +12,126 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #dddddd;
+    }
+    #main{
+      margin: 40px;
+      text-align: center;
+    }
+
+    .side{
+      margin-top: 120px;
+    }
+    #team{
+      border-top: 3px solid red;
+      
+    }
+    #karma{
+      border-top: 3px solid orange;
+      
+    }
+    #calculator{
+      border-top: 3px solid blue;
+      
+    }
+    #supervisor{
+      border-top: 3px solid lightseagreen;
+      
+    }
+    #cards{
+      display:flex;
+      justify-content: center;
+    }
+    .cardholder{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: white;
+      margin: 20px;
+      padding: 10px;
+      height: 225px;
+      width:300px;
+    }
+    .bottom{
+      display:flex;
+      justify-content:flex-end;
+    }
   </style>
 </head>
 <body>
   <!-- Header text -->
-<div id="main">
-  Reliable, efficient delivery
-  Powered by Technology
-  
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-</div>
+  <div id="main">
+    <h2>Reliable, efficient delivery</h2>
+    <h2>Powered by Technology</h2>
+    
+    Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful
+  </div>
   <!-- end of header text -->
 
   <!-- cards -->
+<div id="cards">
+  
+  <div class="side">
+  <div class="card" id="supervisor">
+    <div class="top">
+      <h3>Supervisor</h3>
+      Monitors activity to identify project roadblocks
+    </div>
+    <div class="bottom">
+      <img src="./images/icon-supervisor.svg" height="50" width="50" />
+    </div>
+  </div>
+  </div>
+  
+  <div class="cardholder">
+   
+    <div class ="card" id="team">
+      <div class="top">
+      <h3>Team Builder</h3>
+      Scans our talent network to create the optimal team for your project
+      </div>
+      <div class="bottom">
+      <img src="./images/icon-team-builder.svg" height="50" width="50" />
+      </div>
+    </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <div class ="card" id="karma">
+      <div class="top">
+      <h3>Karma</h3>
+      Regularly evaluates our talent to ensure quality
+      </div>
+      <div class="bottom">
+      <img src="./images/icon-karma.svg" height="50" width="50" />
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="side">
+    <div class ="card" id="calculator">
+      <div class="top">
+        <h3>Calculator</h3>
+      Uses data from past projects to provide better delivery estimates
+      </div>
+      <div class="bottom">
+      <img src="./images/icon-calculator.svg" height="50" width="50" />
+      </div> 
+    </div>
+  </div>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  <!-- end of cards-->
+</div>
+<!-- end of cards-->
   
   <footer>
     <p class="attribution">
